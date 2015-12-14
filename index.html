@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" /><!-- Disable horrible auto-skype for contact numbers in IE -->
+    <meta name="description" content="Add a site description here"><!-- Add your site description -->
+    <meta name="author" content="Add author description here"><!-- Add your author description -->
+    <meta name="keywords" content="add,some,general,keywords,here,about,your,site"><!-- Add sites your keywords -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" /><!-- Include a Favicon, (always keep in root of folder) -->
+
+    <title>Московская ассоциация сомелье</title><!-- Your page/site title -->
+
+    <!-- Load Our CSS - Do not alter the load order -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"><!-- Bootstrap Core - ALways load first -->
+    <link href="css/animate.css" rel="stylesheet"><!-- Animatations -->
+    <link href="css/icomoon.css" rel="stylesheet"><!-- Icon Font -->
+    <link href="css/flexslider.css" rel="stylesheet"><!-- Flexslider styles for #blogfeed -->
+    <link href="css/style.css" rel="stylesheet"><!-- Main theme stylesheet -->
+    <link href="css/custom.css" rel="stylesheet"><!-- Custom styles - Always load last -->
+
+    <!-- Load our fonts from Typekit -->
+    <script src="https://use.typekit.net/sbj8asy.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <!-- Load our stylesheet for IE8 -->
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="css/ie8.css" />
+    <![endif]-->
+
+    <!-- Load our stylesheet for IE9 -->
+    <!--[if IE 9]>
+    <link rel="stylesheet" type="text/css" href="css/ie9.css" />
+    <![endif]-->
+
+    <!-- Load our jQuery, with an alternative source/fallback to our own version if request is unavailable -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="home">
+
+    <!-- Our page loader -->
+    <div class="loadstack">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- ============================ Main menu, (modal window) ============================ -->
+
+    <div id="menumodal" class="modal fade" tabindex="-1" role="dialog" aria-label="menumodalLabel" aria-hidden="true">
+
+        <!-- Close modal trigger -->
+        <button class="toggleclose" data-dismiss="modal" aria-hidden="true">
+            <span class="icon-close"></span>
+        </button>
+        <div class="explore">
+            <h3>Меню</h3>
+        </div>
+
+        <!-- Menu content -->
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- Logo for desktops/large screens -->
+                    <div id="menumodalLabel" class="modal-title">
+                        <div class="modallogo">
+                            <img src="img/logosmall.png" alt="Columbia Logo">
+                        </div>
+                        <div class="modaltagline">
+                            <h3> Московская Ассоциация Сомелье</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <ul class="row motion">
+                        <li class="col-md-4 col-sm-6 two">
+                            <div class="menubg" style="background-image: url('img/menu/index.jpg')"></div>
+                            <a href="index.html" title="Home with Color Overlay Hero Image">Новости<span>Основные события индустрии, отсчеты с мероприятий</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 four">
+                            <div class="menubg" style="background-image: url('img/menu/image.jpg')"></div>
+                            <a href="" title="Home with Hero Image">Об ассоциации<span>Наша миссия и ценности</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 eight">
+                            <div class="menubg" style="background-image: url('img/menu/video.jpg')"></div>
+                            <a href="" title="Home with Video Hero">Вступить в ассоциацию<span>Мы всегда рады новому опыту и людям</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 six">
+                            <div class="menubg" style="background-image: url('img/menu/slider.jpg')"></div>
+                            <a href="" title="Home with Slider Hero">Члены ассоциации<span>Уже в нашей команде</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 ten">
+                            <div class="menubg" style="background-image: url('img/menu/2col.jpg')"></div>
+                            <a href="" title="Two Col Potfolio Grid">Партнеры<span>Люди и компании с которыми мы работаем</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 twelve">
+                            <div class="menubg" style="background-image: url('img/menu/3col.jpg')"></div>
+                            <a href="" title="Three Col Portfolio Grid">Контакты<span>Есть вопросы? Свяжитесь с нами</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <h3>Контакты</h3>
+                    <h4>4-я Магистральная 11, строение 2, +7(495)500-5051</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================ End Main Navigation ==================================== -->
+
+    <!-- ============================ Social menu, (modal window) ============================ -->
+
+    <div id="socialmodal" class="modal fade" tabindex="-1" role="dialog" aria-label="socialmodalLabel" aria-hidden="true">
+
+        <!-- Menu Trigger -->
+        <button class="toggleclose" data-dismiss="modal" aria-hidden="true">
+            <span class="icon-close"></span>
+        </button>
+        <div class="explore">
+            <h3>Мы в соцсетях</h3>
+        </div>
+
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h3>Мы в соцсетях</h3>
+                    <ul class="socialicons motion">
+                        <li class="six"><a href="http://facebook.com/" title="Facebook" class="facebook" target="_blank"><span class="icon-facebook"></span></a></li>
+                        <li class="eight"><a href="http://instagram.com/" title="Instagram" class="instagram" target="_blank"><span class="icon-instagram"></span></a></li>
+                        <li class="ten"><a href="http://vimeo.com/" title="Vimeo" class="vimeo" target="_blank"><span class="icon-vimeo"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- =============================== End social menu ============================== -->
+
+    <!-- ============================ Form Popup, (modal window) ============================ -->
+
+    <div id="formmodal" class="modal fade" tabindex="-1" role="dialog" aria-label="socialmodalLabel" aria-hidden="true">
+
+        <!-- Menu Trigger -->
+        <button class="toggleclose" data-dismiss="modal" aria-hidden="true">
+            <span class="icon-close"></span>
+        </button>
+        <div class="explore">
+            <h3>ЗАЯВКА НА ВСТУПЛЕНИЕ</h3>
+        </div>
+
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+	                <h3>ОСТАВИТЬ ЗАЯВКУ НА ВСТУПЛЕНИЕ</h3>
+	                <div class="col-md-4 col-md-offset-4">
+                        <form name="sentMessage" id="contactForm" novalidate="">
+                                <div class="row control-group">
+                                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                                        <label>Name</label>
+                                        <input type="text" class="form-control" placeholder="Ваше имя" id="name" required="" data-validation-required-message="Please enter your name.">
+                                        <p class="help-block text-danger" style="display: none; color: #f00;">Заполните поле</p>
+                                    </div>
+                                </div>
+                                <div class="row control-group">
+                                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                                        <label>E-mail adress</label>
+                                        <input type="email" class="form-control" placeholder="E-mail" id="email" required="" data-validation-required-message="Please enter your email        address.">
+                                        <p class="help-block text-danger" style="display: none; color: #f00;">Укажите правильный email адрес</p>
+                                    </div>
+                                </div>
+                                <div class="row control-group">
+                                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                                        <label>Phone</label>
+                                        <input type="tel" class="form-control" placeholder="Номер телефона" id="phone" required="" data-validation-required-message="Please enter your phone number."> 
+                                         <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                 <div class="row control-group">
+                                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                                        <label>School</label>
+                                        <input type="text" class="form-control" placeholder="Учебное заведение" id="name" required="" data-validation-required-message="Please enter your school.">
+                                        <p class="help-block text-danger" style="display: none; color: #f00;">Заполните поле</p>
+                                    </div>
+                                </div>
+
+                                </div>
+                                <br>
+                                <div id="success"></div>
+                                <div class="row">
+                                    <div class="form-group col-xs-12">
+                                        <button type="submit" class="btn btn-success btn-lg submitform">ОТПРАВИТЬ</button>
+                                </div>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- =============================== End form popup ============================== -->
+    
+    <!-- ============================ Header/fixed sidebar ============================ -->
+
+    <header id="header">
+        
+        <!-- Main menu toggle -->
+        <button class="toggle this" data-toggle="modal" data-target="#menumodal">
+            <span class="menu-bar bar-1"></span>
+            <span class="menu-bar bar-2"></span>
+            <span class="menu-bar bar-3"></span>
+        </button>
+        
+        <!-- Second logo for mobiles/tablets only. Maximum height of 65px -->
+        <div class="mobile_logo">
+            <img src="img/logosmall.png" alt="MAS logo">
+        </div>
+
+        <!-- Bullet navigation -->
+        <nav id="bullets" class="cover">
+            <ul>
+                <li class="current-page-item"><a href="#start"></a></li>
+                <li><a href="#icons"></a></li>
+                <li><a href="#three"></a></li>
+                <li><a href="#stats"></a></li>
+                <li><a href="#blogfeed"></a></li>
+                <li><a href="#testimonials"></a></li>
+            </ul>
+        </nav>      
+
+    </header>
+
+    <!-- Social menu toggle - keep outside of header to prevent horrible positioning problem on ipads -->
+    <button class="social" data-toggle="modal" data-target="#socialmodal">
+        <span class="icon-share"></span>
+    </button>
+
+    <!-- End header/fixed sidebar -->
+
+    <!-- ============================ Start the page content ============================ -->
+
+    <!-- Leading Page Container -->
+    <!-- Always keep all page content wrapped in this div, with id="wrapper" and class="page-content" -->
+    <div id="wrapper" class="page-content">
+
+        <!-- ============================ Section one: hero ============================ -->
+
+        <section id="start" class="herofade hero cover element-img" style="background-image: url('img/hero-image.jpg')">
+            <div class="tagline">
+                <img src="img/logolarge.png" class="wow fadeInUp" alt="Columbia Logo" data-wow-delay="0.3s">
+                <h1 class="wow fadeInUp" data-wow-delay="0.5s">Московская ассоциация сомелье</h1>
+                <button type="submit" data-toggle="modal" data-target="#formmodal" class="btn btn-success btn-lg submitform" >Подать заявку на вступление</button>
+                <a class="scrollto" href="#two" title="Get Reading"><span class="icon-arrow-down2"></span></a>
+            </div>
+        </section>
+
+        <!-- ============================ Section two: textblock ============================ -->
+
+        <section id="two" class="container wow fadeInUp scrollreceive" data-wow-delay="0.5s">
+            <div class="row padding">
+                <div class="col-xs-12">
+                    <h2 >Об ассоциации</h2>
+                    <hr class="mini">
+                    <p> Московская ассоциация сомелье основана в 2015 году по инициативе <a href="http://www.simple.ru" class="textlink" title="link">компании Simple</a>. Ассоциация создана для     
+                    объединения профессионалов винной индустрии в Москве и по всей России.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================ Section three: image and text ============================ -->
+
+        <section class="container-fluid white">
+            <div class="row">
+                <div class="col-md-6 textpadding wow fadeInLeft" data-wow-delay="0.5s">
+                    <h2>Цели и задачи</h2>
+                    <hr class="mini">
+                    <p>Работа с профессионалами индустрии, организация конкурсов сомелье и дегустаций, повышение уровня культуры потребления вина в России</p>
+                </div>
+                <div class="col-md-6 element-img" style="background-image: url('img/collaborate.jpg'); height: 540px"></div>
+            </div>
+        </section>
+        
+         <!-- ============================ Section twelve: blog roll ============================ -->
+
+        <section id="blogfeed" class="container-fluid light-grey-lt">
+            <div class="modtitle">
+                <h3>Новости</h3>
+            </div>
+            <div class="direction controls">
+                <a href="prev" class="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                <a href="next" class="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="blogslider">
+                        <ul class="slides">
+                            <li>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="flat-box">
+                                        <div class="slideimg">
+                                            <a href="" title="Add Title"><img src="img/blogfeed/post-01.jpg" alt="Add alt tag"></a>
+                                        </div>
+                                        <h3 class="slidetitle"><a href="post.html" title="Post Title">Лучшие сомелье России 2016</a></h3>
+                                        <p class="blogroll-meta">Опубликовано: Декабрь 2015, в рубрике Награды</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="flat-box">
+                                        <div class="slideimg">
+                                            <a href="" title="Add Title"><img src="img/blogfeed/post-02.jpg" alt="Add alt tag"></a>
+                                        </div>
+                                        <h3 class="slidetitle"><a href="post.html" title="Post Title">Новый рейтинг от Джеймса Саклинга</a></h3>
+                                        <p class="blogroll-meta">Опубликовано: Декабрь 2015, в рубрике Рейтинг</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- ============================ Section four: services icons ============================ -->
+
+        <section id="icons" class="red-lt">
+            <div class="container padding">
+                <div class="row">
+                    <div class="col-md-3 col-xs-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <span class="icon-droplet"></span>
+                        <h3>Винная экспертиза</h3>
+                    </div>
+                    <div class="col-md-3 col-xs-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <span class="icon-user4"></span>
+                        <h3>Конкурсы сомелье</h3>
+                    </div>
+                    <div class="col-md-3 col-xs-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <span class="icon-thumbs-up"></span>
+                        <h3>Частные консультации</h3>
+                    </div>
+                    <div class="col-md-3 col-xs-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <span class="icon-location2"></span>
+                        <h3>Выездные дегустации</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                <!-- ============================ Section fourteen: testimonials ============================ -->
+
+        <section id="testimonials" class="container padding wow fadeInUp" data-wow-delay="0.3s">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <h2>ОТЗЫВЫ О НАС</h2>
+                    <hr class="mini red-lt central">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div id="testo-slide" class="carousel slide" data-ride="carousel">
+                        <!-- Bottom Carousel Indicators -->
+                        <ol class="carousel-indicators">
+                          <li data-target="#testo-slide" data-slide-to="0" class="active"></li>
+                          <li data-target="#testo-slide" data-slide-to="1"></li>
+                        </ol>
+                    
+                        <!-- Carousel Slides / Quotes -->
+                        <div class="carousel-inner">
+
+                            <!-- Quote 1 -->
+                            <div class="item active">
+                                <blockquote>
+                                    <div class="row">
+                                        <div class="col-sm-3 text-center">
+                                            <img class="img-circle" src="img/testo-1.jpg" alt="Person One">
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <p>Здорово, что в Москве появилось свое профессиональное винное сообщество!</p>
+                                            <small>Джеймс Саклинг</small>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+                            <!-- Quote 2 -->
+                            <div class="item">
+                                <blockquote>
+                                    <div class="row">
+                                        <div class="col-sm-3 text-center">
+                                            <img class="img-circle" src="img/testo-2.jpg" alt="Person Two">
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <p>Приезжал в гости по приглашению ассоциации! Все супер</p>
+                                            <small>Роберт Паркер</small>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+                               </div>
+                    </div><!-- End #testo-slide -->               
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================ Section fifteen: clients ============================ -->
+
+        <section id="clients" class="white padding">
+             <div class="container">
+                <div class="row centertext">
+                    <div class="col-xs-12">
+                        <h2>НАШИ ПАРТНЕРЫ</h2>
+                        <hr class="mini central">
+                        <br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-6 col-xs-6 wow fadeInUp" data-wow-delay="0.3s">
+                                        <img src="img/clients/simple.png" class="img-responsive" alt="simple">
+                                    </div>
+                                    <div class="col-md-6 col-xs-6 wow fadeInUp" data-wow-delay="0.6s">
+                                        <img src="img/clients/ras.png" class="img-responsive" alt="enotria">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-6 col-xs-6 wow fadeInUp" data-wow-delay="0.9s">
+                                        <img src="img/clients/enotria.png" class="img-responsive" alt="ras">
+                                    </div>
+                                    <div class="col-md-6 col-xs-6 wow fadeInUp" data-wow-delay="1.2s">
+                                        <img src="img/clients/grancru.png" class="img-responsive" alt="grandcru">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================ Footer ============================ -->
+
+        <footer class="padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <a href="index.html" title="Columbia"><img src="img/logosmall.png" alt="Add alt tag"></a>
+                        <p>Пейте лучшие вина!</p>
+                        <small>&copy; 2015, Московская Ассоциация Сомелье. Все права защищены.</small>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <!-- / END page #wrapper -->
+    </div>
+
+    <!-- ========== Load our scripts - keep positioned at the end of your document ========== -->
+
+    <script src="js/bootstrap.min.js"></script><!-- Bootstrap core - always load first -->
+    <script src="js/wow.min.js"></script><!-- WoW animations -->
+    <script src="js/jquery.nav.js"></script><!-- Left-hand bullet navigation -->
+    <script src="js/jquery.nicescroll.min.js"></script><!-- Scrollbars for whole page and main navigation -->
+    <script src="js/jquery.counterup.min.js"></script><!-- counterup plugin for increasing page stats -->
+    <script src="js/waypoints.min.js"></script><!-- Waypoints, needed for 'counterup' plugin -->
+    <script src="js/jquery.fitvids.js"></script><!-- Fitvids plugin, (responsive videos) -->
+    <script src="js/jquery.flexslider-min.js"></script><!-- Flexslider -->
+    <script src="js/jquery.easing.min.js"></script><!-- Easing plugin, for opacity fade on menu background images -->
+    <script src="js/scripts.js"></script><!-- Custom JS functions - always load last -->
+
+    <!-- Page-specific JS functions - these are functions that only occur on this specific page, so we DON'T want these placed in our scripts.js file as this file is loaded on every page for global site functions.  -->
+
+    <!-- Initialize CounterUp plugin for rounding up/animated statistics -->
+    <script>
+        jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+    </script>
+
+    <!-- Initialize fitvids.js plugin for responsive videos -->
+    <script>
+        $(document).ready(function(){
+            $(".fitvids").fitVids();
+        });
+    </script>
+
+    <!-- Teamimonials Carousel -->
+    <script>
+        $(document).ready(function(){
+            $('#testo-carousel').carousel({
+                pauseOnHover: true,
+                interval: 4000,
+            });
+        });
+    </script>
+
+    <!-- Initialize flexslider for blogfeed slider -->
+    <script>
+        // second-flexslider
+        $(window).load(function() {
+          $('#blogslider').flexslider({
+            animation: "slide",
+            directionNav: false,
+            controlNav: false,
+            touch: false,
+            slideshow: false
+          });
+        });
+        $('.prev, .next').on('click', function() {
+          var href = $(this).attr('href');
+          $('#blogslider').flexslider(href)
+          return false;
+        })
+    </script>
+
+    <!-- ========== Insert your Google Analytics code below this line ========== -->
+
+    <!-- ======================== End Google Analytics ========================= -->
+
+</body>
+
+</html>
